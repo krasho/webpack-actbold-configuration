@@ -1,0 +1,84 @@
+.grid-sizer {
+width:calc(33% - 1rem);
+@include breakpoint($small){width: 100%;}
+}
+.post-grid {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+.post-card {
+	width: 100%;
+	max-width:calc(33% - 1rem);
+	@include breakpoint($small){max-width: 100%;}
+	margin-bottom: 1rem;
+	display: block;
+	border-radius: 0.5rem;
+   @include boxShadow(1);
+   transition:box-shadow 0.7s ease;
+   &:hover {@include boxShadow(3);}
+}
+.post-card:nth-of-type(3) {
+	margin-right: 0;
+}
+.post-wrap {
+padding: 0.5rem;
+height: auto;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.post-wrap {
+	height: 100%;
+}
+.header .logo svg {max-height: 2.5rem;}
+}
+
+.card-img {
+	width: 100%;
+	height: 100%;
+	img {width: 100%;height: 100%;display: block;margin: auto;border-top-right-radius: 0.5rem;border-top-left-radius: 0.5rem;}
+}
+.card-date {
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: $white;
+	border-radius: 50%;
+	height: 1.5rem;
+	width: auto;
+	@include boxShadow(2);
+	.month, .day {font-size: 0.7rem;line-height: 100%;}
+
+}
+.card-category {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+}
+.card-title h3 {
+	color: $dark;
+	margin: 0.5rem auto;
+	font-size: 0.9rem;
+	padding: 0 0.5rem;
+	a {color: $dark;}
+}
+
+.card-excerpt p {
+	margin: 0;
+	padding: 0 0.5rem;
+	font-size: 0.75rem;
+	margin-bottom: 1rem;
+}
+.publisher {
+	height: 0;
+	opacity: 0;
+	position: absolute;
+}

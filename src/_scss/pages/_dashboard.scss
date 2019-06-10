@@ -1,0 +1,82 @@
+.page-dashboard {
+//BANNER
+.banner {
+	height: auto;
+	background: $yellow;
+	@include boxShadow(1);
+	.wrapper {display: flex;flex-direction: column;justify-content: center;}
+	h1 {margin: 0;font-weight:400;font-size: 2rem;
+		@include breakpoint($small){max-width: 100%;text-align: center;font-size: 1.5rem;}
+	}
+}
+
+.flex {
+	display: flex;
+	@include breakpoint($small){flex-wrap: wrap;}
+}
+.dashboard-sidebar {
+ flex-shrink: 1;
+ margin-right: 1rem;
+ width: 100%;
+ max-width: 30rem;
+ background: $lightgrey;
+ padding: 1rem;
+ margin-right: 1rem;
+  @include breakpoint($small){
+	 width: 100%;
+	 margin-right: 0;
+	 margin-bottom: 1rem;
+ }
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	width: auto;
+}
+
+
+}
+h6 {
+	font-size: 1rem;
+	margin:0;
+}
+//WELCOME MESSAGE
+.welcome-message {
+	p {line-height: 1.75rem;
+		 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	height: 5rem;
+}
+	}
+	.view {fill:$red;width: 1.5rem;height: auto;vertical-align: middle;}
+	.download {fill:$green;width: 1.25rem;height: auto;vertical-align: middle;}
+
+}
+.content {
+	width: 100%;
+	position: relative;
+	max-width: 100%;
+	flex-grow: 1;
+}
+.report-frame {
+	width: 100%;
+	height: auto;
+}
+.reports {
+	height: auto;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.report {
+	margin-bottom: 0.25rem;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+	.icons {
+		height: 1.5rem;
+		display: flex;
+		svg {width: 100%;height: auto;}
+		.view {fill:$red;max-width: 1.5rem;margin-right: 1rem;height: auto;cursor: pointer;}
+		.download {fill:$green;max-width: 1.25rem;height: auto;}
+	}
+
+}

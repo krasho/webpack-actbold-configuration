@@ -1,0 +1,146 @@
+.page-step-2, .page-step-3, .page-step-4 {
+	.business-phone {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		top: 0;
+		margin-right: 0.5rem;
+		position: relative;
+	}
+	.header .wrap {
+		@include breakpoint($small){flex-direction: row;justify-content: space-between;}
+	}
+	//REMOVE MENU ON FORM PAGES
+.main-menu {
+	display: none;
+}
+	.flex {
+		justify-content: space-between;
+		@include breakpoint($small){flex-direction: column-reverse;justify-content: center;align-content: center;align-items: center;}
+	}
+	.content {
+		flex-grow: 1;
+		margin-right: 1rem;
+		@include breakpoint($small){margin-right: 0;}
+
+	}
+	.steps {
+		padding: 0 1rem;
+		max-width: 20rem;
+		margin: 1rem auto;
+		margin-bottom: -1rem;
+	}
+	.list {
+		
+		div {display: flex;justify-content: flex-start;justify-content:flex-start;align-items: center; }
+		svg {width: 1rem;height: 1rem;}
+	}
+
+	.sidebar {
+		position: relative;
+		width: 300px;
+		max-width: 300px;
+		flex-shrink: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@include breakpoint($small){margin:1rem auto;width: 100%;max-width: 90%;}
+		.offer-box {
+			padding: 1.25rem;
+			@include breakpoint($mobile){text-align: center;}
+			p{font-size: 0.9rem;}
+			
+			}
+		.offer-body {
+			.fa-ul {
+				@include breakpoint($mobile){display: none;}
+			}
+		}
+		.offer-header {
+			h3 {font-family: "Open Sans"; font-size: 1rem;margin: 0;font-weight: 400;}
+			span {			
+			font-size: 2.5rem;
+			color: $blue;
+			}
+			padding-bottom: 0.5rem;
+			border-bottom: 2px solid $blue;
+			width: 100%;
+		}
+		@include boxShadow(1);
+
+	}
+
+//SUBMIT BUTTON
+			.wpcf7-submit {
+		box-sizing: border-box;
+		-moz-appearance:none;
+		-webkit-appearance:none;
+		height: 48px;
+		border-radius: 5px;
+		width: 100%;
+		border: 1px solid #e0e0e0;
+		font-size: 1rem;
+		margin-bottom: 0.75rem;
+		padding: 0 0.5rem;
+		background: $blue2;
+		color: $white;
+			}
+
+}
+//SMARTY STYLES
+.smarty-tag {
+	position: absolute;
+	left: 1rem;
+}
+.smarty-popup {
+	border-radius: 5px;
+	border: none;
+	margin-top: 2.5rem;
+}
+.smarty-popup-header {color: $blue;}
+.smarty-choice-alt .smarty-choice-abort {
+	border-radius: 5px;
+	background: $blue2;
+}
+
+
+//STEP 3
+.page-step-3 {
+	.loader {display: none;}
+}
+
+//DENIED PAGE
+.page-denied {
+	.wrapper {height: 100%;}
+	.hero-content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	.denied {max-width: 40rem;box-shadow: 0 0 10px $red;background: $white;color: $dark;height: auto;border-radius: 5px;padding: 1rem;margin:2.5rem 0;}
+	a {color: $dark;}
+	}
+}
+
+//SUBMIT ANIMATION
+.submit input {
+	animation-delay: 1s;
+}
+//APPROVAL CODE
+.approval-code {
+	color: $white;
+	border-radius: 5px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	font-weight: 600;
+	background:$green;
+	font-family: "Open Sans";
+}
+
+//OWNERSHIP
+.ownership {
+	display: flex;
+	max-width: 22rem;
+	span:first-child {margin-right: 1rem;}
+}

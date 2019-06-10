@@ -1,0 +1,58 @@
+.header {
+	@include boxShadow(2);
+	z-index: 9999;
+	position: relative;
+	width: 100%;
+	height: auto;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		height: 8rem;
+		}
+	.wrapper {
+		position: relative;
+		padding: 1rem;
+		width: 100%;
+		height: 100%;
+		@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		margin: 0 auto;
+		width: 100%;
+		}
+	.flex {
+		display: flex;
+		justify-content: space-between;
+	}
+		
+	}
+.logo-one {
+display: block;	
+width: 100%;
+max-width: 14rem;
+margin-right: 1rem;	
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		position: absolute;
+		left: 0;
+		top: 0;
+		}
+		
+svg {
+width: 100%;
+height: 100%;
+max-width: 14rem;
+fill:$white;
+stroke:$white;
+path {fill:$white;}
+}
+}
+
+.login {
+	background: $red;
+	padding: 0.25rem;
+	position: absolute;
+	top: -0.25rem;
+	right: 0;
+	border-radius: 0.5rem;
+	@include boxShadow(3);
+	a {color: $white;text-transform: uppercase;font-weight: 400;font-size: 0.7rem;line-height: auto;}
+}
+
+}
+
